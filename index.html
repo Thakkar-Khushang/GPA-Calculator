@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
+    <title>intro to html</title>
+
+
+  </head>
+  <body>
+<h1 class="one">
+  GPA Calculator
+</h1>
+    <div>
+      <p>Number of subjects:</p>
+      <input type="number" id='Num subjects'</input>
+      <p></p>
+    </div>
+
+    <div class="">
+      <!-- Create 2 buttons. One for adding the fields and one for doing tha calculation -->
+      <button type="button" name="button1" onClick='createField()' class="button">add Marks</button>
+      <p></p>
+    </div>
+
+    <div id='texts'>
+      <p>Enter your marks here</p>
+      <!-- This is where the new input fileds will be created -->
+    </div>
+
+    <div id='Final mark'>
+      <!-- This is where the code for the grade to be displayed will be added -->
+        <p id='output'></p>
+      <!-- This element is a dummy one to be deleted on the first run of the script. In subssequent runs the displayed grade will be deleted -->
+    </div>
+    <script src="index.js" charset="utf-8"></script>
+    <div id="CalcGPA"> 
+      <button type="button" name="button2" onClick='calculate()' class="button" >calculate gpa</button>
+    </div>
+  </body>
+</html>
